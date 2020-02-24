@@ -1,0 +1,3 @@
+The book I followed for learning Python crash course 2nd edition 
+
+Git for source code https://github.com/ehmatthes/pcc_2e/
