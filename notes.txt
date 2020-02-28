@@ -34,3 +34,42 @@ To run server
 To use virtual server
     workon <virtual server name>
     ex: workon test
+
+To install rest API in Django
+    pip install <packagename>
+    pip install djangorestframework
+
+
+To migrate the tables
+    python manage.py makemigrations
+
+To install mysql
+    pip install mysqlclient
+
+To setup the mysql database
+    open the settings.py and comment the existing default setup, and paste below setup code
+    DATABASES = {
+                    'default': {
+                        'ENGINE': 'django.db.backends.mysql',
+                        'NAME': 'dataflair',
+                        'USER': 'root',
+                        'PASSWORD': “”,
+                        'HOST': “”,
+                        'PORT': “”,
+                        'OPTIONS': {
+                            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+                        }
+                    }
+                }
+
+To migrate the mysql tables
+    python manag.py migrate
+
+To create super Users
+    python manage.py createsuperuser
+    
+    
+##################In Ubantu server######################
+
+source virtualenvironment/project_1/bin/activate
+ 
